@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Contact-University</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Edu+NSW+ACT+Foundation&family=Libre+Franklin:wght@100;400&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/056100c4f3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <section class="sub-header">
+
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="courses.html">COURSE</a></li>
+                    <li><a href="blogs.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+    <!-- -----------Google-Map------------ -->
+
+    <section class="location">
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d58970.07453459871!2d88.34191426855101!3d22.518074026801557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1688361947019!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+    <!-- ----------Contact-Us---------- -->
+
+    <section class="contact-us">
+
+        <div class="contact-row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa-solid fa-house"></i>
+                    <span>
+                        <h5>XYZ street, Whitefield</h5>
+                        <p>Banglore, Karnataka</p>
+                    </span>
+                </div>
+                
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>
+                       
+                        <h5>+91 8144302508</h5>
+                        <p>Monday-Friday, 10AM-5PM</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>
+                        
+                        <h5>hgolar06@gmail.com</h5>
+                        <p>Email Us for any Query</p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="contact-col">
+
+                <form action="form_handler.php" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="text" name="email" placeholder="Your Email" required>
+                    <input type="text" name="subject" placeholder="Your Subject">
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Your Massage"></textarea>
+                    <a href="" class="hero-btn blog-btn">Send Message</a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ------------Footer------------ -->
+
+    <section class="footer">
+        <h3>About Us</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati provident ex minus voluptatum at animi
+            dolores corrupti numquam eaque error, consequuntur temporibus, placeat eos debitis dolore optio architecto!
+            Facere, laborum!</p>
+
+        <div class="social-icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+
+        <p>Made with <i class="fa-regular fa-heart"></i> by Harkaran.</p>
+    </section>
+
+
+    <!-- ----------JS for Toggle Menu---------- -->
+
+    <script>
+
+        var navLinks = document.getElementById('navLinks');
+
+        function hidemenu() {
+            navLinks.style.right = "-201px";
+        }
+
+        function showmenu() {
+            navLinks.style.right = "0px";
+        }
+    </script>
+</body>
+
+</html>

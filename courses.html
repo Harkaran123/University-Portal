@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Courses-University</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Edu+NSW+ACT+Foundation&family=Libre+Franklin:wght@100;400&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/056100c4f3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <section class="sub-header">
+
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="courses.html">COURSE</a></li>
+                    <li><a href="blogs.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>Courses</h1>
+    </section>
+
+    <!-- ---------Courses---------- -->
+
+    
+    <section class="courses">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi praesentium laudantium, ex reiciendis
+            impedit, quam consectetur voluptate accusamus ab repellat maxime quia eveniet architecto nesciunt fuga,
+            alias illum nostrum nulla!</p>
+
+        <div class="courses-row">
+            <div class="course-col">
+                <h3>B-Tech</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit hic, delectus ullam nam necessitatibus
+                    temporibus ipsum esse consequuntur nisi, vero illum, expedita facere impedit consectetur!
+                    Perspiciatis libero corrupti asperiores nisi.</p>
+            </div>
+            <div class="course-col">
+                <h3>M-Tech</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit hic, delectus ullam nam necessitatibus
+                    temporibus ipsum esse consequuntur nisi, vero illum, expedita facere impedit consectetur!
+                    Perspiciatis libero corrupti asperiores nisi.</p>
+            </div>
+            <div class="course-col">
+                <h3>Diploma</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit hic, delectus ullam nam necessitatibus
+                    temporibus ipsum esse consequuntur nisi, vero illum, expedita facere impedit consectetur!
+                    Perspiciatis libero corrupti asperiores nisi.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- -----------Facilities----------- -->
+
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="facilities-row">
+            <div class="facilities-col">
+                <img src="images/cafeteria.png" alt="">
+                <h3>Tasty and Healthy Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis tenetur accusamus autem ipsum ex eos
+                    hic impedit adipisci esse placeat perspiciatis.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/library.png" alt="">
+                <h3>Biggest Library in the City</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis tenetur accusamus autem ipsum ex eos
+                    hic impedit adipisci esse placeat perspiciatis.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/basketball.png" alt="">
+                <h3>Best Playgrounds</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis tenetur accusamus autem ipsum ex eos
+                    hic impedit adipisci esse placeat perspiciatis.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- ------------Footer------------ -->
+
+    <section class="footer">
+        <h3>About Us</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati provident ex minus voluptatum at animi
+            dolores corrupti numquam eaque error, consequuntur temporibus, placeat eos debitis dolore optio architecto!
+            Facere, laborum!</p>
+
+        <div class="social-icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+
+        <p>Made with <i class="fa-regular fa-heart"></i> by Harkaran.</p>
+    </section>
+
+
+    <!-- ----------JS for Toggle Menu---------- -->
+
+    <script>
+
+        var navLinks = document.getElementById('navLinks');
+
+        function hidemenu() {
+            navLinks.style.right = "-201px";
+        }
+
+        function showmenu() {
+            navLinks.style.right = "0px";
+        }
+    </script>
+</body>
+
+</html>
